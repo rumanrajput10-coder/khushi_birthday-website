@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff4e7">
+  <title>For Khushi ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-doodles" aria-hidden="true">
+    <span class="doodle d1">✦</span><span class="doodle d2">♡</span>
+    <span class="doodle d3">✿</span><span class="doodle d4">✧</span>
+    <span class="doodle d5">♥</span><span class="doodle d6">✦</span>
+  </div>
+
+  <main class="site">
+    <header class="topline">
+      <span class="mini-logo">K<span>♡</span></span>
+      <span class="topline-label">a tiny website made with love</span>
+      <span class="topline-date">17 · 10</span>
+    </header>
+
+    <!-- 1. Welcome screen -->
+    <section class="screen active" id="welcome" aria-labelledby="welcome-title">
+      <div class="paper welcome-paper">
+        <span class="tape tape-left"></span><span class="tape tape-right"></span>
+        <span class="sticker sticker-heart">♥</span><span class="sticker sticker-flower">✿</span>
+        <p class="eyebrow">OPEN WHEN YOU'RE READY ✉</p>
+        <div class="welcome-collage">
+          <div class="polaroid welcome-polaroid">
+            <div class="photo-window">
+              <img src="images/khushi1.jpg" alt="Khushi" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+              <div class="photo-fallback" hidden>YOUR<br>FAVOURITE<br>GIRL ♡</div>
+            </div>
+            <span>my khushi 🧡</span>
+          </div>
+          <div class="side-note">a little<br>surprise<br>for you <span>↙</span></div>
+        </div>
+        <p class="handwritten intro-line">to my favourite human...</p>
+        <h1 id="welcome-title">Hey, Khushi! <span class="red-heart">♥</span></h1>
+        <p class="lead">I made something special for you.</p>
+        <p class="body-copy">A tiny corner of the internet filled with memories, silly things, and all the love you deserve.</p>
+        <button class="primary-btn" data-go="question">Come inside <span>♡</span></button>
+        <p class="tiny-note">made just for you · with lots of love</p>
+      </div>
+    </section>
+
+    <!-- 2. Yes / no question -->
+    <section class="screen" id="question" aria-labelledby="question-title">
+      <div class="paper question-paper">
+        <span class="sticker q-star">✦</span><span class="sticker q-heart">♡</span>
+        <div class="big-sticker">🎀</div>
+        <p class="eyebrow">WAIT, ONE IMPORTANT QUESTION</p>
+        <h2 id="question-title">Are you ready<br>for your surprise?</h2>
+        <p class="body-copy">Think carefully, birthday girl. There is no going back. 😌</p>
+        <div class="button-row">
+          <button class="primary-btn" data-go="clickthrough">YES ❤️</button>
+          <button class="secondary-btn" id="noBtn">NO 😭</button>
+        </div>
+        <p class="response-note" id="noMessage" aria-live="polite">Choose wisely, Khushi 👀</p>
+        <button class="text-btn" data-go="welcome">↶ wait, go back</button>
+      </div>
+    </section>
+
+    <!-- 3. Click / continue -->
+    <section class="screen" id="clickthrough" aria-labelledby="click-title">
+      <div class="paper click-paper">
+        <div class="envelope-illustration" aria-hidden="true"><span>♥</span></div>
+        <p class="eyebrow">A LITTLE NOTE BEFORE WE BEGIN</p>
+        <h2 id="click-title">This is all<br>for you, Khushi.</h2>
+        <p class="handwritten">No skipping the cute stuff! ♡</p>
+        <button class="primary-btn" data-go="reveal">Tap to open the surprise ✨</button>
+      </div>
+    </section>
+
+    <!-- 4. Birthday reveal -->
+    <section class="screen" id="reveal" aria-labelledby="reveal-title">
+      <div class="paper reveal-paper">
+        <span class="sticker reveal-s1">✿</span><span class="sticker reveal-s2">♥</span>
+        <div class="confetti-zone" id="revealConfetti" aria-hidden="true"></div>
+        <p class="eyebrow">TODAY IS YOUR DAY</p>
+        <div class="birthday-badge">17<br><small>OCT</small></div>
+        <div class="reveal-photo polaroid">
+          <div class="photo-window">
+            <img src="images/khushi2.jpg" alt="Birthday girl Khushi" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+            <div class="photo-fallback" hidden>THE<br>BIRTHDAY<br>GIRL ♡</div>
+          </div>
+          <span>the main character ✨</span>
+        </div>
+        <h1 id="reveal-title">Happy Birthday<br><span>Khushi!</span> ❤️🧡</h1>
+        <p class="body-copy">May your year be full of tiny joys, loud laughs, soft days, and dreams coming true.</p>
+        <div class="heart-row" aria-hidden="true">♥ ♥ ♥ ♥ ♥</div>
+        <button class="primary-btn" data-go="menu">Explore your gift →</button>
+      </div>
+    </section>
+
+    <!-- 5. Interactive menu -->
+    <section class="screen" id="menu" aria-labelledby="menu-title">
+      <div class="paper menu-paper">
+        <p class="eyebrow">YOUR LITTLE SCRAPBOOK</p>
+        <h2 id="menu-title">Pick a little surprise</h2>
+        <p class="body-copy">Every tiny thing here is for you. Tap whatever catches your eye!</p>
+        <div class="menu-grid">
+          <button class="menu-item" data-go="memories">
+            <span class="object camera-object">📷</span><strong>Memory lane</strong><small>our little moments</small>
+          </button>
+          <button class="menu-item" data-go="letter">
+            <span class="object envelope-object">💌</span><strong>A letter for you</strong><small>open when ready</small>
+          </button>
+          <button class="menu-item" data-go="music">
+            <span class="object cassette-object">🎵</span><strong>Our soundtrack</strong><small>press play</small>
+          </button>
+          <button class="menu-item" data-go="funny">
+            <span class="object gift-object">🎁</span><strong>One silly thing</strong><small>you've been warned</small>
+          </button>
+        </div>
+        <div class="menu-footer">choose your own adventure ♡</div>
+      </div>
+    </section>
+
+    <!-- 6. Memories -->
+    <section class="screen" id="memories" aria-labelledby="memories-title">
+      <div class="paper memories-paper">
+        <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+        <h2 id="memories-title">Memory lane 📸</h2>
+        <p class="body-copy">Replace these placeholders with your favourite photos and captions.</p>
+        <div class="memory-grid">
+          <figure class="memory-card tilt-left"><div class="memory-photo"><img src="images/khushi1.jpg" alt="Memory one" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="photo-fallback" hidden>PHOTO 01</span></div><figcaption>my favourite human ♡</figcaption></figure>
+          <figure class="memory-card tilt-right"><div class="memory-photo"><img src="images/khushi2.jpg" alt="Memory two" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="photo-fallback" hidden>PHOTO 02</span></div><figcaption>the best kind of chaos</figcaption></figure>
+          <figure class="memory-card tilt-right"><div class="memory-photo"><img src="images/khushi3.jpg" alt="Memory three" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="photo-fallback" hidden>PHOTO 03</span></div><figcaption>laughing at nothing</figcaption></figure>
+          <figure class="memory-card tilt-left"><div class="memory-photo"><img src="images/khushi4.jpg" alt="Memory four" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="photo-fallback" hidden>PHOTO 04</span></div><figcaption>one for the scrapbook</figcaption></figure>
+          <figure class="memory-card tilt-left"><div class="memory-photo"><img src="images/khushi5.jpg" alt="Memory five" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="photo-fallback" hidden>PHOTO 05</span></div><figcaption>a day to remember</figcaption></figure>
+          <figure class="memory-card tilt-right"><div class="memory-photo"><img src="images/khushi6.jpg" alt="Memory six" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="photo-fallback" hidden>PHOTO 06</span></div><figcaption>forever a core memory</figcaption></figure>
+        </div>
+        <div class="nav-row"><button class="secondary-btn" data-go="menu">← scrapbook</button><button class="primary-btn" data-go="letter">Next: a letter →</button></div>
+      </div>
+    </section>
+
+    <!-- 7. Birthday letter -->
+    <section class="screen" id="letter" aria-labelledby="letter-title">
+      <div class="paper letter-paper">
+        <span class="sticker letter-sticker">♥</span>
+        <p class="eyebrow">SEALED WITH A HUG</p>
+        <div class="letter-sheet">
+          <div class="letter-top">♡ a little letter ♡</div>
+          <h2 id="letter-title">To my Khushi,</h2>
+          <div class="letter-content">
+            <p>Happy birthday to one of the most special people in my life. ❤️</p>
+            <p>I'm so grateful that I get to know you, laugh with you, and collect all these little memories with you. You deserve kindness, happiness, success, and every beautiful thing your heart hopes for.</p>
+            <p>Thank you for being <em>you</em>. I hope this new chapter brings you more reasons to smile than you can count.</p>
+            <p class="replace-note">[once again happy birthday ap aik saal bhudi hogai hai or ap ko allah tala bht lambi umar ata farmaye ameen or ap ko allah itna paisa day kay mujhy roz lunch karwaye ameen.]</p>
+            <p>Keep shining, birthday girl. I’m always cheering for you. 🧡</p>
+            <p class="letter-signoff">With lots of love,<br><span>Your bestie ♡</span></p>
+          </div>
+          <span class="letter-stamp">FOR<br>KHUSHI</span>
+        </div>
+        <div class="nav-row"><button class="secondary-btn" data-go="menu">← scrapbook</button><button class="primary-btn" data-go="music">Next: music ♪</button></div>
+      </div>
+    </section>
+
+    <!-- 8. Music -->
+    <section class="screen" id="music" aria-labelledby="music-title">
+      <div class="paper music-paper">
+        <p class="eyebrow">A LITTLE SOUNDTRACK</p>
+        <h2 id="music-title">Press play, birthday girl 🎵</h2>
+        <div class="cassette">
+          <div class="cassette-label">KHUSHI'S MIXTAPE <span>♡</span></div>
+          <div class="cassette-window"><span class="reel"></span><span class="tape-line"></span><span class="reel"></span></div>
+          <div class="cassette-bottom"><span>side A</span><span>made with love · 17/10</span></div>
+        </div>
+        <p class="body-copy">Add your own audio file to the <code>audio</code> folder, then name it <code>birthday-song.mp3</code>.</p>
+        <audio id="birthdayAudio" controls preload="none">
+          <source src="audio/birthday-song.mp3" type="audio/mpeg">
+          Your browser does not support audio playback.
+        </audio>
+        <p class="tiny-note" id="audioNote">If you haven't added a song yet, the player will be ready when you do.</p>
+        <div class="nav-row"><button class="secondary-btn" data-go="menu">← scrapbook</button><button class="primary-btn" data-go="funny">Next surprise →</button></div>
+      </div>
+    </section>
+
+    <!-- 9. Funny interaction -->
+    <section class="screen" id="funny" aria-labelledby="funny-title">
+      <div class="paper funny-paper">
+        <span class="sticker funny-star">✦</span><span class="sticker funny-heart">♡</span>
+        <div class="big-sticker">😌</div>
+        <p class="eyebrow">A VERY SERIOUS ANNOUNCEMENT</p>
+        <h2 id="funny-title">Khushi, we need to talk.</h2>
+        <p class="body-copy">After careful research, I have reached a very important conclusion...</p>
+        <div class="dramatic-note" id="dramaticNote">You are officially TOO iconic to be a normal person. 😭❤️</div>
+        <button class="primary-btn" id="moreCompliments">Tell me more 👀</button>
+        <div class="nav-row"><button class="secondary-btn" data-go="menu">← scrapbook</button><button class="primary-btn" data-go="finalLetter">Continue →</button></div>
+      </div>
+    </section>
+
+    <!-- 10. Final birthday letter / wish -->
+    <section class="screen" id="finalLetter" aria-labelledby="final-letter-title">
+      <div class="paper final-letter-paper">
+        <p class="eyebrow">ONE LAST THING BEFORE YOUR GIFT</p>
+        <div class="mini-envelope">💌</div>
+        <h2 id="final-letter-title">A birthday wish<br>just for you.</h2>
+        <p class="body-copy">May you always find people who celebrate your wins, sit beside you on hard days, and remind you how loved you are.</p>
+        <p class="handwritten">The world is better with you in it. 🧡</p>
+        <button class="primary-btn" data-go="final">Open your final surprise 🎁</button>
+      </div>
+    </section>
+
+    <!-- 11. Final surprise -->
+    <section class="screen" id="final" aria-labelledby="final-title">
+      <div class="paper final-paper">
+        <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+        <h2 id="final-title">Something just for you...</h2>
+        <button class="gift-button" id="openGift" aria-label="Open the gift">
+          <span class="gift-bow">✿</span><span class="gift-lid"></span><span class="gift-box">♡</span>
+        </button>
+        <p class="body-copy" id="giftHint">Tap the gift to open it! 🎀</p>
+        <div class="final-reveal" id="finalReveal" hidden>
+          <div class="final-photo polaroid">
+            <div class="photo-window">
+              <img src="images/khushi3.jpg" alt="Khushi smiling" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+              <div class="photo-fallback" hidden>YOU ARE<br>LOVED ♡</div>
+            </div>
+            <span>always my khushi 🧡</span>
+          </div>
+          <h2>Happy Birthday, Khushbakht! ❤️</h2>
+          <p>You are loved more than this little website can ever explain. Keep being your wonderful self.</p>
+          <div class="heart-row">❤️ 🧡 ❤️ 🧡 ❤️</div>
+          <p class="handwritten">The end... or just another memory? ♡</p>
+          <button class="secondary-btn" id="restartBtn">Replay the surprise ↺</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">made for Khushi · 17 October · <span>♡</span></footer>
+  </main>
+
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
